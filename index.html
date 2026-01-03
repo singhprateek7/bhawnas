@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For You ❤️</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <button onclick="showPage('home')">Home</button>
+  <button onclick="showPage('letter')">Letter</button>
+  <button onclick="showPage('memories')">Memories</button>
+  <button onclick="showPage('future')">Future</button>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="page active">
+  <h1>To the girl who owns my heart</h1>
+  <p>Swipe through these pages… this little world is just for you 🤍</p>
+</section>
+
+<!-- LETTER -->
+<section id="letter" class="page">
+  <div class="envelope" onclick="toggleLetter()">
+    <div class="envelope-top"></div>
+    <div class="letter">
+      <p>
+        My love,<br><br>
+        Every moment with you feels like poetry written by time itself.
+        You are my calm, my chaos, my forever favorite feeling.<br><br>
+        With you, even silence feels beautiful.<br><br>
+        Always yours ❤️
+      </p>
+    </div>
+  </div>
+  <p class="hint">Tap the envelope</p>
+</section>
+
+<!-- MEMORIES -->
+<section id="memories" class="page">
+  <h2>Our Memories</h2>
+  <p>
+    Some smiles, some late nights, some quiet moments —
+    they don’t need pictures. They live in the heart forever.
+  </p>
+</section>
+
+<!-- FUTURE -->
+<section id="future" class="page">
+  <h2>Our Future</h2>
+
+  <div class="promise-box">
+    <p class="promise-text" id="promiseText">
+      I promise to choose you,<br>
+      in loud days and quiet nights,<br>
+      in chaos and calm,<br>
+      today… and every tomorrow.
+    </p>
+
+    <button class="promise-btn" onclick="revealPromise()">
+      Make a Promise 🤍
+    </button>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
